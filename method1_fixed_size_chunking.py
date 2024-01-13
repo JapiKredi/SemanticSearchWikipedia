@@ -3,7 +3,6 @@ import pandas as pd
 import wikipediaapi
 
 # Call the Wikipedia function through a user_agent and specify the language
-# Call the Wikipedia function through a user_agent and specify the language
 string = "SemSearchDemo/2.0 (Jasper B)"
 wiki_wiki = wikipediaapi.Wikipedia(user_agent= string, language= 'en')
 
