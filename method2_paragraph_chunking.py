@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 import wikipediaapi
+from sentence_transformers import SentenceTransformer, util
 
 # Call the Wikipedia function through a user_agent and specify the language
 # This code creates an instance of the Wikipedia class from the wikipedia-api package, which is used to interact with the Wikipedia API.
@@ -85,4 +86,3 @@ para_chunk_df = para_chunk_df[para_chunk_df['Chunk Text'] != '']  # Remove empty
 para_chunk_df = para_chunk_df.reset_index(drop=True)   # Reset index
 print(para_chunk_df)
 
-from sentence_transformers import SentenceTransformer, util
