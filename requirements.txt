@@ -2,3 +2,4 @@ wikipedia-api
 numpy
 pandas
 matplotlib
+sentence-transformers
