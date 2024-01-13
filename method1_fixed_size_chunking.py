@@ -77,3 +77,6 @@ def generate_embeddings(texts):
 
 def generate_embeddings_on_df(df):
   df['Embeddings'] = df['Chunk Text'].apply(lambda x: generate_embeddings([x])[0])
+  
+# Create embeddings for 'Chunk Text' column on all three dataframes
+generate_embeddings_on_df(fixed_chunk_df)
