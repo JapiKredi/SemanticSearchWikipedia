@@ -83,3 +83,5 @@ generate_embeddings_on_df(fixed_chunk_df)
 
 # printing the dataframe that includes the embeddings 
 print(fixed_chunk_df)
+
+print(fixed_chunk_df['Embeddings'][0])

@@ -107,3 +107,5 @@ generate_embeddings_on_df(section_chunk_df)
 
 # printing the dataframe that includes the embeddings 
 print(section_chunk_df)
+
+print(section_chunk_df['Embeddings'][0])

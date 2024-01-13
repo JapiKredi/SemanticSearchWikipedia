@@ -99,3 +99,5 @@ generate_embeddings_on_df(para_chunk_df)
 
 # printing the dataframe that includes the embeddings 
 print(para_chunk_df)
+
+print(para_chunk_df['Embeddings'][0])
