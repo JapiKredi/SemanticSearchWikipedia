@@ -1,6 +1,4 @@
 wikipedia-api
 numpy
 pandas
-wikipediaapi
-
-
+matplotlib
