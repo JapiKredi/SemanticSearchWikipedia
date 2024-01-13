@@ -80,3 +80,6 @@ def generate_embeddings_on_df(df):
   
 # Create embeddings for 'Chunk Text' column on all three dataframes
 generate_embeddings_on_df(fixed_chunk_df)
+
+# printing the dataframe that includes the embeddings 
+print(fixed_chunk_df)

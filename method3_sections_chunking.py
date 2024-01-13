@@ -104,3 +104,4 @@ def generate_embeddings_on_df(df):
   
 # Create embeddings for 'Chunk Text' column on all three dataframes
 generate_embeddings_on_df(section_chunk_df)
+
