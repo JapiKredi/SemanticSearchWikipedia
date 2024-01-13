@@ -70,6 +70,10 @@ for title in page_titles:
 fixed_chunk_df = pd.concat(all_dfs, ignore_index=True)
 print(fixed_chunk_df)
 
+# Load pre-trained Sentence Transformer model
+model_name = "all-MiniLM-L6-v2"
+embedder = SentenceTransformer(model_name)
+
 # Function to generate embeddings for text
 def generate_embeddings(texts):
     embeddings = embedder.encode(texts, convert_to_tensor=True)
