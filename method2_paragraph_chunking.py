@@ -54,10 +54,12 @@ def extract_wikipedia_page(page_title):
     
 
 # Function to recursively extract paragraphs from sections
+# function takes a Wikipedia section and a list of accumulated text as arguments. 
+# It extracts the text from the section and its subsections, splits it into paragraphs, and adds the paragraphs to the accumulated text.
 def extract_paragraphs(section, accumulated_text):
-    accumulated_text.extend(section.text.split('\n'))
-    for sub_section in section.sections:
-        extract_paragraphs(sub_section, accumulated_text)
+    accumulated_text.extend(section.text.split('\n')) # splits the text of the section into paragraphs (assuming that paragraphs are separated by newline characters) and adds them to the accumulated_text list.
+    for sub_section in section.sections: #  starts a loop that iterates over each subsection of the section.
+        extract_paragraphs(sub_section, accumulated_text) #  the function calls itself recursively for each subsection. This means that it will extract the text from the subsection and its subsections, split it into paragraphs, and add the paragraphs to the accumulated_text list.
 
 # List of Wikipedia page titles
 page_titles = ["The Shawshank Redemption", "The Dark Knight", "Pulp Fiction", "The Godfather", "Goodfellas"]
