@@ -1,7 +1,6 @@
 import numpy as np
 import pandas as pd
 import wikipediaapi
-from functions import process_page, split_text_into_chunks
 
 # Call the Wikipedia function through a user_agent and specify the language
 # Call the Wikipedia function through a user_agent and specify the language
@@ -69,4 +68,5 @@ for title in page_titles:
         all_dfs.append(df)
 
 fixed_chunk_df = pd.concat(all_dfs, ignore_index=True)
-fixed_chunk_df
+print(fixed_chunk_df)
+
