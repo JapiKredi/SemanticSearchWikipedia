@@ -1,4 +1,10 @@
-# One document with all functiobs
+# One document with all functios
+
+# Import all required modules and libraries
+
+import numpy as np
+import pandas as pd
+import wikipediaapi
 
 # Function to extract and store Wikipedia page information
 
