@@ -92,3 +92,5 @@ section_chunk_df = pd.DataFrame(data) # The DataFrame is created from the data d
 section_chunk_df = section_chunk_df[section_chunk_df['Chunk Text'] != '']  # Remove empty sections
 section_chunk_df = section_chunk_df.reset_index(drop=True)  # Reset index
 print(section_chunk_df)
+
+from sentence_transformers import SentenceTransformer, util

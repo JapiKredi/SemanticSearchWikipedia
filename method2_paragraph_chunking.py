@@ -85,3 +85,4 @@ para_chunk_df = para_chunk_df[para_chunk_df['Chunk Text'] != '']  # Remove empty
 para_chunk_df = para_chunk_df.reset_index(drop=True)   # Reset index
 print(para_chunk_df)
 
+from sentence_transformers import SentenceTransformer, util

@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 import wikipediaapi
+from sentence_transformers import SentenceTransformer, util
 
 # Call the Wikipedia function through a user_agent and specify the language
 string = "SemSearchDemo/2.0 (Jasper B)"
