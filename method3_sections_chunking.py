@@ -98,3 +98,8 @@ print(section_chunk_df)
 def generate_embeddings(texts):
     embeddings = embedder.encode(texts, convert_to_tensor=True)
     return embeddings
+
+def generate_embeddings_on_df(df):
+  df['Embeddings'] = df['Chunk Text'].apply(lambda x: generate_embeddings([x])[0])
+  
+  
