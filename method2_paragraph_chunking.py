@@ -86,6 +86,10 @@ para_chunk_df = para_chunk_df[para_chunk_df['Chunk Text'] != '']  # Remove empty
 para_chunk_df = para_chunk_df.reset_index(drop=True)   # Reset index
 print(para_chunk_df)
 
+# Load pre-trained Sentence Transformer model
+model_name = "all-MiniLM-L6-v2"
+embedder = SentenceTransformer(model_name)
+
 # Function to generate embeddings for text
 def generate_embeddings(texts):
     embeddings = embedder.encode(texts, convert_to_tensor=True)
