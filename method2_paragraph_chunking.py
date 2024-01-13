@@ -30,6 +30,7 @@ redundant_sections = [
     "References and sources",
     "References and notes",
 ]
+
 # Function to extract and store Wikipedia page information
 # The function extract_wikipedia_page takes a Wikipedia page title as an argument and retrieves the title and text of the corresponding Wikipedia page, if it exists.
 def extract_wikipedia_page(page_title):
