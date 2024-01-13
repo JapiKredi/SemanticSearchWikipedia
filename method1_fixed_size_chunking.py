@@ -71,7 +71,9 @@ fixed_chunk_df = pd.concat(all_dfs, ignore_index=True)
 print(fixed_chunk_df)
 
 # Load pre-trained Sentence Transformer model
-model_name = "all-MiniLM-L6-v2"
+#model_name = "all-MiniLM-L6-v2"
+model_name = "all-mpnet-base-v2"
+
 embedder = SentenceTransformer(model_name)
 
 # Function to generate embeddings for text
