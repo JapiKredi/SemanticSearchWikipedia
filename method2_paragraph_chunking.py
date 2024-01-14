@@ -107,3 +107,4 @@ generate_embeddings_on_df(para_chunk_df)
 print(para_chunk_df)
 
 print(para_chunk_df['Embeddings'][0])
+print(para_chunk_df['Embeddings'][1])
