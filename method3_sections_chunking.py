@@ -4,6 +4,9 @@ import os
 import wikipediaapi
 from sentence_transformers import SentenceTransformer, util
 
+
+print('This is a debugging test')
+
 # Call the Wikipedia function through a user_agent and specify the language
 # This code creates an instance of the Wikipedia class from the wikipedia-api package, which is used to interact with the Wikipedia API.
 string = "SemSearchDemo/2.0 (Jasper B)" # This line creates a string that will be used as the user agent for the Wikipedia API requests. The user agent is a string that the client sends to the server to identify itself. In this case, it identifies the client as "SemSearchDemo/2.0 (Jasper B)".
