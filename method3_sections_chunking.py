@@ -3,7 +3,7 @@ import pandas as pd
 import os
 import wikipediaapi
 from sentence_transformers import SentenceTransformer, util
-
+import matplotlib as plt
 
 print('This is a debugging test')
 
